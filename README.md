@@ -1,6 +1,6 @@
 # SupervisedMachineLearning
 This challenge we are leaning supervised machine learning with different types of resampling techniques.
-### Type of Resampling Techniques used to check the qccuracy of model
+### Type of Resampling Techniques used to check the accuracy of model
 * Oversampling
 * SMOTE Oversampling
 * Unsersamping

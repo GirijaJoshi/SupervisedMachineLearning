@@ -1,13 +1,14 @@
 # Supervised Machine Learning
-This challenge we are leaning supervised machine learning with different types of resampling techniques.
+This challenge we are leaning supervised machine learning with different types of resampling techniques. We used the Python's numpy, SciPy and Scikit-learn packages for differet sampling techniques. We have used Supervised machine leaning for this module challenge. Supervised learning deals with labeled data. This challenge explores different types if sampling techniques to train the model. And compares the accuracy of the models with each to indentify which model performs better than other models. 
+
 ### Type of Resampling Techniques used to check the accuracy of model
 * Oversampling
 * SMOTE Oversampling
-* Unsersamping
+* Unsersampling
 * Combination (Over and Under) Sampling
 
 ### Flow
-We have used LoanStats_2019Q1.csv file for data sampling. Cleaned the data, used 'loan_sample' as y (target) and rest as X. Then trained model on X and y and then used different types of sampling techniques to findout accuracy, cofusion matrix and generate classification report. According to our data, its not even there are more 'low_risk' loan samples than 'high_risk' loan samples. Counter({'low_risk': 51366, 'high_risk': 246})
+We have used LoanStats_2019Q1.csv file for data sampling. Cleaned the data, used 'loan_sample' as y (target) and rest as X. Then trained model on X and y and then used different types of sampling techniques to findout accuracy, cofusion matrix and generate classification report. According to our data, its not even there are more 'low_risk' loan samples than 'high_risk' loan samples. Counter({'low_risk': 51366, 'high_risk': 246}). 
 
 ### Oversampling
 Using RandomOverSampler from imlearn we resampled the data to match class of less sample data with class of more sample data and its summary is as below. According to summary precision is very low (0.01) for low data class (high_risk) and high (1.00) for high data class (low_risk). Recalls are high for high_risk loans that is 0.74 and low for low_risk loans 0.58. Accuracy score is 0.66.

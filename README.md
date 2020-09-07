@@ -29,7 +29,7 @@ Using SMOTEENN from imlearn we resampled the data to match class of less sample 
 
 ![Combination](images/combination.PNG)
 
-### Summary
+### Summary And Analysis
 By looking at the summary for all sampling techniques none of the sampling technique looks clearly better than other. All of them almost equal. For sure undersampling is worst as its accuracy score is just 0.54 and f1 score 0.01 is also bad.
 By looking at remaining 3 model techniques (combination, oversamplting, SMOTE) oversampling has highest accuracy which is 0.66. f1 score for high_risk is bad which is 0.02 but its same as for rest 3 models. Precision TP/(TP + FP):
 Oversmapling : for high_risk loan are 75/(75 +  7216) = 0.01 and 26/(26+9888) = 0.002. 

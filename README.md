@@ -41,7 +41,7 @@ Oversampling: high_risk: 75/ (75 + 26) = 0.74, low_risk 7216/(7216 + 9888) = 0.4
 SMOTE: high_risk:  63/ (63 + 38) = 0.62, low_risk: 5410 / (5410 + 11694)= 0.31
 Combination: 63/ (63 + 38) = 0.62, low_risk: 5410 / (5410 + 11694)= 0.31
 
-Summary shows that Oversampling has recall 074 and 0.42 which is more than STOME and Combination. Precision is same for all of them. Accuracy is little bit more for Oversampling model technique. So we can go with Oversamping model technique.
+Summary shows that Oversampling has recall 074 and 0.42 which is more than SMOTE and Combination. Precision is same for all of them. Accuracy is little bit more for Oversampling model technique. So we can go with Oversamping model technique.
 
 
 

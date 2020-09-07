@@ -17,7 +17,7 @@ Using RandomOverSampler from imlearn we resampled the data to match class of les
 ### SMOTE Oversampling
 Using SMOTE from imlearn we resampled the data to match class of less sample data with class of more sample data and its summary is as below. The SMOTE is increated size of minority is increaed by interpolating new instances. For example instance from the minority class, a number of its closest neighbors is chosen. Based on the values of these neighbors, new values are created. By using this technique model accuracy is 0.65. According to summary precision is very low (0.01) for low data class (high_risk) and high (1.00) for high data class (low_risk), which is same as Oversampling. Difference between Recalls hish_risk and low_risk samples are not much, high_risk is 0.62 and low_righ is 0.68.
 
-![SMOTE](images/smpte.PNG)
+![SMOTE](images/smote.PNG)
 
 ### UnderSampling
 Using ClusterCentroids from imlearn we resampled the data to match class of less sample data with class of more sample data and its summary is as below.In Undersampling instead of increasing the number of the minority class, the size of the majority class is decreased. Original: Counter({'low_risk': 51366, 'high_risk': 246}), After Undersampling Counter({'high_risk': 246, 'low_risk': 246}). By using this technique model accuracy is 0.54. According to summary precision is very low (0.01) for low data class (high_risk) and high (1.00) for high data class (low_risk). Recall for high_risk data samples 0.67 and for low_risk its 0.42 low. f1 score is also very bad 0.01
@@ -27,7 +27,7 @@ Using ClusterCentroids from imlearn we resampled the data to match class of less
 ### Combination ()
 Using SMOTEENN from imlearn we resampled the data to match class of less sample data with class of more sample data and its summary is as below. SMOTEENN combines the SMOTE and Edited Nearest Neighbors (ENN) algorithms. First it oversample the minority class with SMOTE, second clean the resulting data with an undersampling strategy. By using this technique model accuracy is 0.64.  According to summary precision is very low (0.01) for low data class (high_risk) and high (1.00) for high data class (low_risk). REcalls for high_risk (0.72) higher than low_risk (0.57). f1 score is still bad 0.02 high_risk and good for 0.72 low_risk.
 
-![Combination](images/combination.png)
+![Combination](images/combination.PNG)
 
 ### Summary
 By looking at the summary for all sampling techniques none of the sampling technique looks clearly better than other. All of them almost equal. For sure undersampling is worst as its accuracy score is just 0.54 and f1 score 0.01 is also bad.
